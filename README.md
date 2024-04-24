@@ -17,4 +17,5 @@ guest:guest represents the default login credentials being used. In this context
 localhost:5672 is the host address and port used to connect to the AMQP server. In this case, the connection is made to the same machine (localhost) on the standard AMQP port (5672).
 This uniformity in the connection URL ensures that both the publisher and subscriber are interacting with the same message queue, facilitating effective communication and message exchange within the same local environment.
 
-![image](https://github.com/fiqoanugrah/tutorial-8-publisher/assets/87713462/67a36629-a17d-4ff4-921a-602c683075bb)
+## Running RabbitMQ as message broker : 
+![image](https://github.com/fiqoanugrah/tutorial-8-publisher/assets/87713462/bb8dfa25-1b1e-498f-ab37-8fde8b2d1859)
