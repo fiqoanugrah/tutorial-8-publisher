@@ -19,3 +19,14 @@ This uniformity in the connection URL ensures that both the publisher and subscr
 
 ## Running RabbitMQ as message broker : 
 ![image](https://github.com/fiqoanugrah/tutorial-8-publisher/assets/87713462/bb8dfa25-1b1e-498f-ab37-8fde8b2d1859)
+
+## we should at least have one connection as shown:
+It means we have one subscriber making connection to the message broker
+![image](https://github.com/fiqoanugrah/tutorial-8-publisher/assets/87713462/2454d11a-e65c-4f31-b41b-07ead29c8fe4)
+
+Now try to run the publisher again, ‘cargo run’ in the directory publisher. Pay attention on the
+subscriber console on the right. I find some thing like this:
+![image](https://github.com/fiqoanugrah/tutorial-8-publisher/assets/87713462/d969ce95-c9b2-4d57-8af6-12f46b0fd748)
+when I run ‘cargo run’ on publisher (I run the publisher), the publisher sent 5
+event to the message broker. Those event later consumed and processed by the subscriber. 
+
