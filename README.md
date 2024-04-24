@@ -32,6 +32,5 @@ event to the message broker. Those event later consumed and processed by the sub
 
 
 ## Monitoring chart based on publisher :
-![image](https://github.com/fiqoanugrah/tutorial-8-publisher/assets/87713462/adc57ddf-9ca4-4153-b455-65461520a91b)
-
-the spike in the message rate graph indicates that a number of messages were sent to the queue in a short period when I ran the publisher multiple times. After the spike, the message rate dropped back to zero, suggesting that the consumer processed and acknowledged all the messages, and the system is now idle with no messages in the queue.
+![image](https://github.com/fiqoanugrah/tutorial-8-publisher/assets/87713462/869a0d03-cba7-4871-acba-5e1e5ff999d3)
+the spike in the "Queued messages last minute" and "Message rates last minute" graphs shows a burst of activity where messages were published to the queue rapidly. This activity correlates with running the publisher, which sends a number of messages to RabbitMQ in a short time frame, resulting in a temporary increase, or spike, in the number of messages in the queue. After the publisher stops running, we can see that the rate goes down to zero, indicating no new messages are being sent to the queue. The unacknowledged messages count shows messages that have been delivered to a consumer but have not yet been confirmed as processed, which may suggest the consumer is currently working through the backlog created during the spike.
