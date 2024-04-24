@@ -11,6 +11,7 @@ The publisher program is designed to send five separate messages (data entries) 
 **b. The url of: “amqp://guest:guest@localhost:5672” is the same as in the subscriber
 program, what does it mean?
 **
+
 Yes, the URL "amqp://guest:guest@localhost:5672" being the same in both the publisher and subscriber programs indicates that both applications are configured to connect to the same AMQP server using identical settings.
 
 amqp:// specifies the protocol used, which is AMQP.
