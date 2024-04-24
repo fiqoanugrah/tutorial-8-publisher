@@ -30,3 +30,8 @@ subscriber console on the right. I find some thing like this:
 when I run ‘cargo run’ on publisher (I run the publisher), the publisher sent 5
 event to the message broker. Those event later consumed and processed by the subscriber. 
 
+
+## Monitoring chart based on publisher :
+![image](https://github.com/fiqoanugrah/tutorial-8-publisher/assets/87713462/adc57ddf-9ca4-4153-b455-65461520a91b)
+
+the spike in the message rate graph indicates that a number of messages were sent to the queue in a short period when I ran the publisher multiple times. After the spike, the message rate dropped back to zero, suggesting that the consumer processed and acknowledged all the messages, and the system is now idle with no messages in the queue.
